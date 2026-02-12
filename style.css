@@ -1,0 +1,40 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: #fffdfd;
+  background-color:rgb(56, 36, 19) ;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+button {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  width: 92px;
+  height: 50px;
+}
+
+button:hover {
+  background: darkred;
+}
+
+.container {
+  animation: pop 1s ease-in-out infinite alternate;
+}
+
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 768px) { h1 { font-size: 24px; } img { width: 100%; height: auto; } }
+
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
